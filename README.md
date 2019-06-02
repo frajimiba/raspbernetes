@@ -38,7 +38,9 @@
   sudo update-rc.d dphys-swapfile remove
   ```
   Añadir al final de la linea /boot/cmdline.txt
+  ```
   cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+  ```
   
   REBOOT
   
@@ -119,12 +121,9 @@ https://{dns}:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashb
 ```
 
 Join a posteriori
+```
 kubeadm token create --print-join-command
-
-
-
-
-
+```
 
 # Montar disco para gluster:
 
