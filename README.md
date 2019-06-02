@@ -63,7 +63,7 @@ Para precargar los contenedores iniciales de despliegue
 ```
 sudo kubeadm config images pull
 
-sudo kubeadm init --apiserver-advertise-address 10.0.0.10
+sudo kubeadm init
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
